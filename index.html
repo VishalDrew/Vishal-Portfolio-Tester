@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Automation Test Engineer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: linear-gradient(90deg, #005f73, #0a9396);
+            color: #fff;
+            padding: 30px 0;
+            text-align: center;
+            border-bottom: #005f73 3px solid;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            text-transform: uppercase;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav ul {
+            padding: 0;
+            list-style: none;
+            text-align: center;
+        }
+        nav li {
+            display: inline;
+            padding: 0 20px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #d5d5d5;
+        }
+        .main-header {
+            text-align: center;
+            padding: 50px 0;
+        }
+        .content {
+            padding: 20px;
+            background: #fff;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .content:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+        }
+        .content h2 {
+            color: #005f73;
+            margin-top: 0;
+        }
+        .content p, .content ul {
+            color: #555;
+        }
+        .content a {
+            color: #0a9396;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .content a:hover {
+            color: #005f73;
+            text-decoration: underline;
+        }
+        .content ul {
+            padding-left: 20px;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+            header h1 {
+                font-size: 2em;
+            }
+        }
+        /* Additional Styles for Enhancements */
+        .image-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .image-container img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+        .image-container img:hover {
+            transform: scale(1.05);
+        }
+        .animated {
+            animation-duration: 0.5s;
+        }
+        .animated:hover {
+            animation-name: rubberBand;
+        }
+        /* Sliding Animation Classes */
+        .slide-in-left {
+            opacity: 0;
+            transform: translateX(-50%);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+        .slide-in-right {
+            opacity: 0;
+            transform: translateX(50%);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+        .slide-in-left.active, .slide-in-right.active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="main-header">
+                <h1 class="animated">Automation Test Engineer</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#summary">Summary</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#references">References</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <section id="contact" class="content slide-in-left">
+            <h2>Contact Information</h2>
+            <p><strong>Name:</strong> Vishal</p>
+            <p><strong>Email:</strong> <a href="mailto:avishal0806@gmail.com">avishal0806@gmail.com</a></p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/vishal-a-341b19298/" target="_blank">Click here</a></p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/VishalDrew" target="_blank">Click here</a></p>
+        </section>
+
+        <section id="summary" class="content slide-in-right">
+            <h2>Professional Summary</h2>
+            <p>Dedicated and detail-oriented Automation Test Engineer with 1.11 years of experience in developing and executing automated test scripts. Proficient in using various automation tools and frameworks to ensure the quality and reliability of web and mobile applications. Adept at identifying, reporting, and managing defects to enhance software performance and user experience.</p>
+        </section>
+
+        <section id="skills" class="content slide-in-left">
+            <h2>Skills</h2>
+            <ul>
+                <li><strong>Automation Tools:</strong> Selenium, Appium</li>
+                <li><strong>Front End:</strong> HTML, CSS</li>
+                <li><strong>Programming Languages:</strong> Java</li>
+                <li><strong>Testing Frameworks:</strong> TestNG</li>
+                <li><strong>CI/CD Tools:</strong> Jenkins</li>
+                <li><strong>Version Control:</strong> Git, GitHub</li>
+                <li><strong>Bug Tracking Tools:</strong> JIRA</li>
+                <li><strong>Integrated Development Environments (IDEs):</strong> IntelliJ IDEA, Eclipse</li>
+                <li><strong>Other Skills:</strong> API Testing, Agile Methodologies</li>
+            </ul>
+        </section>
+
+        <section id="experience" class="content slide-in-right">
+            <h2>Professional Experience</h2>
+            <h3>Automation Test Engineer</h3>
+            <p><strong>Fieldlytics Technologies Pvt Ltd, Chennai</strong></p>
+            <p>October 2023 – Present</p>
+            <ul>
+                <li>Performed functional tests using Selenium WebDriver and Appium within a data-driven framework; documented results in Allure and Extent Reports.</li>
+                <li>Reduced overall testing hours by 60% through the development and optimization of automation test scripts in Appium and Selenium with Java.</li>
+                <li>Executed cross-browser and parallel testing on Chrome and Firefox using TestNG.</li>
+                <li>Involved in designing and developing an automated functional test suite.</li>
+                <li>Developed an automation framework with Appium, Selenium, Java, and TestNG from Scratch.</li>
+                <li>Advised developers on problems with databases, performance, and other issues.</li>
+                <li>Maintained project codebase in GitHub.</li>
+            </ul>
+
+            <h3>Manual Test Engineer</h3>
+            <p><strong>Fieldlytics Technologies Pvt Ltd, Chennai</strong></p>
+            <p>August 2022 – September 2023</p>
+            <ul>
+                <li>Collaborated with software development and testing teams to design and develop robust solutions that meet client requirements for functionality, scalability, and performance.</li>
+                <li>Created automation scripts using Selenium WebDriver with TestNG.</li>
+                <li>Identified end-to-end scenarios and created test scenarios and test cases for automation.</li>
+                <li>Categorized test cases as part of Smoke, Sanity, Regression, etc.</li>
+                <li>Verified requests and responses of web services and REST APIs using Postman and Insomnia tools.</li>
+                <li>Performed regression testing to validate software changes and ensure backward compatibility.</li>
+                <li>Raised and tracked defects until closure.</li>
+            </ul>
+        </section>
+
+        <section id="education" class="content slide-in-left">
+            <h2>Education</h2>
+            <p><strong>Bachelor of Computer Science</strong></p>
+            <p>Chennai National Arts & Science College, Avadi, Chennai</p>
+            <p>June 2019 – June 2022</p>
+
+            <p><strong>HSC</strong></p>
+            <p>Dharmamurthi Rao Bahadur Calavala Cunnan Chetty's Higher Secondary School, Perambur, Chennai</p>
+            <p>June 2017 - March 2019</p>
+
+            <p><strong>SSLC</strong></p>
+            <p>St. Joseph's Academy Matriculation School, Madhavaram, Chennai</p>
+            <p>June 2016 - March 2017</p>
+        </section>
+        
+
+        <section id="projects" class="content slide-in-right">
+            <h2>Projects</h2>
+            <h3>REDIPAE Web Application</h3>
+            <ul>
+                <li>Architected and developed the Redipae automation framework from scratch, leveraging a Hybrid framework combining Data-Driven and Keyword-Driven approaches.</li>
+                <li>Implemented Page Object Model (POM) to promote code reusability and maintainability.</li>
+                <li>Integrated Allure Reports to generate comprehensive and interactive test reports, providing clear insights into test results.</li>
+                <li>Captured and logged screenshots for test failures, aiding in quick diagnosis and resolution of issues.</li>
+            </ul>
+            <p><strong>Tools used:</strong> Selenium, TestNG, JIRA.</p>
+
+            <h3>FrameX Mobile App</h3>
+            <ul>
+                <li>FrameX efficiently handles dynamic modules, such as the call Plan module, by dynamically adjusting test execution based on data fetched from a database. This enables seamless testing of UI elements that may vary based on database-driven configurations.</li>
+                <li>Integrating with a database, FrameX fetches dynamic data and converts it into locators, facilitating precise interaction with UI elements across different scenarios.</li>
+                <li>Upon form completion, FrameX automates the process of setting network speeds and verifies upload success, reducing manual intervention and ensuring thorough testing coverage.</li>
+            </ul>
+            <p><strong>Tools used:</strong> Appium, Java</p>
+        </section>
+
+        <section id="references" class="content slide-in-left">
+            <h2>References</h2>
+            <p>Available upon request.</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Vishal. All rights reserved.</p>
+    </footer>
+
+    <!-- Optional JavaScript for Smooth Scroll -->
+    <script>
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Slide-in Animation Trigger
+        document.addEventListener('DOMContentLoaded', function() {
+            const sections = document.querySelectorAll('.content');
+            const options = {
+                root: null,
+                threshold: 0.2,
+                rootMargin: '0px'
+            };
+
+            const observer = new IntersectionObserver(function(entries, observer) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, options);
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>
